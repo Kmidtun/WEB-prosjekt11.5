@@ -2,33 +2,108 @@ h1{
   color:blue;
 
 }
-#sidebar {
-    background-color: #333232;
-    width: 200px;
-    height: 100%;
-    margin-top: 150px;
-    display: block;
-    position: absolute;
-    left: 0px;
-    top: 0px
-}
-ul {
-   padding: 0px;
-   margin: 0px;
+#sidebar{
+	background:#151718;
+	width:200px;
+	height:100%;
+	display:block;
+	position:absolute;
+	left:-200px;
+	top:0px;
+	transition:left 0.3s linear;
 }
 
-   li {
-   text-style: none;
+#sidebar.visible{
+	left:0px;
+	transition:left 0.3s linear;
 }
 
-   ul li a {
-   background-color: #262525;
-   color: #ccc;
-   border-bottom: 1px solid #111;
-   border-right: 1px solid #111;
-   border-top: 1px solid #111;
-   display: block;
-   width: 178.5px;
-   padding: 10px;
-   text-decoration: none;
+ul{
+	margin:0px;
+	padding:0px;
+}
+
+ul li{
+	list-style:none;
+}
+
+ul li a{
+	background:#1C1E1F;
+	color:#ccc;
+	border-bottom:1px solid #111;
+	display:block;
+	width:180px;
+	padding:10px;
+	text-decoration: none;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:20px;
+	height:15px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top:0px;
+	right:-60px;
+}
+
+#sidebar-btn span{
+	height:1px;
+	background:#111;
+	margin-bottom:5px;
+	display:block;
+}
+
+#sidebar-btn span:nth-child(2){
+	width:75%;
+}
+
+#sidebar-btn span:nth-child(3){
+	width:50%;
+}
+
+#bildeboks{
+	width:100%;
+	height:200px;
+	display:block;
+	position:absolute;
+	top:50px;
+  border: 3px solid #111;
+}
+
+#bildeArne{
+background-image: url(https://scontent-arn2-1.xx.fbcdn.net/v/t31.0-1/c402.0.960.960/p960x960/19693538_10155583512448777_8159563597950300765_o.jpg?oh=4db561d22aa6d9b0f5aad6453d5e9c7a&oe=5A48219E);
+background-size: width:33%; height:200px;
+  width:33%;
+  height:200px;
+  display:block;
+  position:absolute;
+  top:0px;
+  border: 3px solid #111;
+}
+
+#bildeKristoffer{
+  width:33%;
+  height:200px;
+  margin-left: 33%;
+  display:block;
+  position:absolute;
+  top:0px;
+  border: 3px solid #111;
+}
+
+#bildeMorten{
+  width:33%;
+  height:200px;
+  margin-left: 66%;
+  display:block;
+  position:absolute;
+  top:0px;
+  border: 3px solid #111;
+}
+<img class="img-circle"
+.img-circle {
+    border-radius: 50%;
 }
