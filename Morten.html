@@ -1,0 +1,46 @@
+<html>
+
+  <head>
+
+<tittle></tittle>
+<link rel="stylesheet" type="text/css" href="../WEB-prosjekt11.5/stylesheet1.css">
+
+  </head>
+
+  <body>
+
+
+
+      <div id="sidebar">
+
+        <ul>
+          <li><a href="Framside.html">Framside</a></li>
+          <li><a href="Morten.html">Arne</a></li>
+          <li><a href="Kristoffer.html">Kristoffer</a></li>
+          <li><a href="Morten.html">Morten</a></li>
+        </ul>
+
+        <div id="sidebar-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+
+
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script>
+
+	$(document).ready(function(){
+		$('#sidebar-btn').click(function(){
+			$('#sidebar').toggleClass('visible');
+		});
+	});
+
+	</script>
+
+  </body>
+
+</html>
