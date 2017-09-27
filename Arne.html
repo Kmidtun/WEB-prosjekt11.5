@@ -1,46 +1,84 @@
+<!DOCTYPE HTML>
 <html>
 
-  <head>
+<head>
+    <title>WEB-Prosjekt</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
 
-<tittle></tittle>
-<link rel="stylesheet" type="text/css" href="../WEB-prosjekt11.5/stylesheet1.css">
+<body>
 
-  </head>
-
-  <body>
-
-
-
-      <div id="sidebar">
-
-        <ul>
-          <li><a href="Framside.html">Framside</a></li>
-          <li><a href="Morten.html">Arne</a></li>
-          <li><a href="Kristoffer.html">Kristoffer</a></li>
-          <li><a href="Morten.html">Morten</a></li>
-        </ul>
-
-        <div id="sidebar-btn">
-          <span></span>
-          <span></span>
-          <span></span>
+    <header id="header">
+        <div class="inner">
+            <a href="Framside.html" class="logo">Gruppe 20 @ HVL</a>
+            <nav id="nav">
+                <a href="Framside.html" ->Fremside</a>
+                <a href="Arne.html">Arne</a>
+                <a href="Kristoffer.html">Kristoffer</a>
+                <a href="Morten.html">Morten</a>
+            </nav>
         </div>
+    </header>
 
-      </div>
+    <section id="banner">
+        <h1>Arne Olai Lyngsmo Molland</h1>
+        <p>Informasjonsteknologi-A H2017</p>
+        <div class="img-profil">
+            <img class="img-profil" src="images/Arne.png">
+        </div>
+    </section>
 
+    <section id="one" class="wrapper">
+        <div class="inner">
+            <div class="flex flex-3">
+                <article>
+                    <header>
+                        <h3>Litt om meg<br /> og litt ekstra</h3>
+                    </header>
+                    <p>Jeg går første året på informasjonsteknologi ved <a href="http://www.hvl.no"><strong>HVL</strong></a>. Her trives jeg veldig godt, og ser frem til de kommende årene!</p>
+                    <footer>
+                        <a href="#" class="button special">Mer</a>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Fritidsaktiviteter<br /> og hobbyer</h3>
+                    </header>
+                    <ul>
+                        <li>Design</li>
+                        <li>Musikk</li>
+                        <li>Programmering</li>
+                        <li>Trening</li>
+                        <li>Film og bøker</li>
+                    </ul>
+                    <footer>
+                        <a href="#" class="button special">Mer</a>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Libero purus magna sapien<br /> sed ullamcorper</h3>
+                    </header>
+                    <p>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu.</p>
+                    <footer>
+                        <a href="#" class="button special">Mer</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#sidebar-btn').click(function() {
+                $('#sidebar').toggleClass('visible');
+            });
+        });
+    </script>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script>
-
-	$(document).ready(function(){
-		$('#sidebar-btn').click(function(){
-			$('#sidebar').toggleClass('visible');
-		});
-	});
-
-	</script>
-
-  </body>
+</body>
 
 </html>

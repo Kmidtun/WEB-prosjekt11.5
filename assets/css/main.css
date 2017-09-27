@@ -1,0 +1,266 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+@import "https://fonts.googleapis.com/css?family=Raleway:100,300,600";
+html,
+body,
+div,
+h1,
+h2,
+h3,
+p,
+a,
+center,
+ol,
+ul,
+li,
+article,
+footer,
+header,
+nav,
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+header,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+
+/* Bruker flere "tester" for størrelsen på enheten som leser nettsiden, max-width er ikke i skjerm-pixler men CSS-pixler! */
+
+@media screen and (max-width: 1680px) {
+    .container.\31 25\25 {
+        width: 100%;
+        max-width: 100em;
+        min-width: 80em;
+    }
+    .container.\37 5\25 {
+        width: 60em;
+    }
+    .container.\35 0\25 {
+        width: 40em;
+    }
+    .container.\32 5\25 {
+        width: 20em;
+    }
+    .container {
+        width: 80em;
+    }
+}
+
+body {
+    -ms-overflow-style: scrollbar;
+}
+
+body {
+    background: #fff;
+}
+
+.img-profil {
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+    height: 200px;
+    width: 200px;
+}
+
+
+/* Fonter og tekst*/
+
+body,
+input,
+select,
+textarea {
+    color: #9a9a9a;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+    line-height: 1.65;
+}
+
+@media screen and (max-width: 1680px) {
+    body,
+    input,
+    select,
+    textarea {
+        font-size: 11pt;
+    }
+}
+
+a {
+    color: #5385c1;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #5385c1;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0 0 1em 0;
+}
+
+h2 {
+    font-size: 1.75em;
+    font-weight: 100;
+}
+
+h3 {
+    font-size: 1.35em;
+}
+
+@media screen and (max-width: 1280px) {
+    .inner {
+        max-width: 90%;
+    }
+}
+
+
+/* Skille mellom banner og blokker */
+
+section.wrapper,
+article.wrapper {
+    padding: 6em 0;
+}
+
+
+/* Skille mellom blokkene, !MÅ FIKSES, BLOKKENE ER OFFSET TIL VENSTRE! */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex.flex-3 article {
+    position: relative;
+    width: 28%;
+}
+
+.flex.flex-3 article:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -2em;
+    top: 0;
+    border-right: 1px solid #dbdbdb;
+    pointer-events: none;
+}
+
+
+/* Header, her må vi fikse på paddingen */
+
+.subpage {
+    padding-top: 44px;
+}
+
+.subpage #header {
+    background: #5385c1;
+    top: 0;
+    height: 44px;
+    line-height: 44px;
+    position: fixed;
+}
+
+#header {
+    color: #d4e0ef;
+    cursor: default;
+    height: 3.25em;
+    left: 0;
+    line-height: 3.25em;
+    position: absolute;
+    text-align: right;
+    top: 4em;
+    width: 100%;
+    z-index: 10001;
+}
+
+
+/* Flytter headeren lengre mot midten*/
+
+#header .inner {
+    margin: 0 auto;
+    position: relative;
+}
+
+#header .logo {
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 600;
+    height: inherit;
+    left: 0;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    font-size: 1em;
+}
+
+#header a {
+    transition: color 0.2s ease-in-out;
+    display: inline-block;
+    padding: 0 0.75em;
+    color: inherit;
+    text-decoration: none;
+    font-size: .8em;
+}
+
+#header a:hover {
+    color: #ffffff;
+}
+
+
+/* Banner */
+
+#banner {
+    padding: 12em 0 10em 0;
+    background-image: url('../../images/bakgrunn.png');
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-top: 0.5em solid #5385c1;
+}
+
+#banner h1 {
+    font-size: 3.5em;
+    font-weight: 100;
+    color: #fff;
+    line-height: 1em;
+    margin: 0 0 0.5em 0;
+    padding: 0;
+}
+
+#banner p {
+    font-size: 1em;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 1.75em;
+}
