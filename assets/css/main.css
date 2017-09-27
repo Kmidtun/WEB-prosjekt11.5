@@ -11,8 +11,6 @@ p,
 a,
 center,
 ol,
-ul,
-li,
 article,
 footer,
 header,
@@ -77,12 +75,29 @@ body {
     background: #fff;
 }
 
+ul.no_bullet {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li.facebook {
+    list-style-image: url("images/FacebookLogo.png");
+}
+
 .img-profil {
     margin: auto;
     margin-top: 50px;
     position: relative;
     height: 200px;
     width: 200px;
+}
+
+.img-sosial {
+    margin: auto;
+    position: relative;
+    height: 50px;
+    width: 50px;
 }
 
 
