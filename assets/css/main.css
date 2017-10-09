@@ -85,6 +85,10 @@ li.facebook {
     list-style-image: url("images/FacebookLogo.png");
 }
 
+li.instagram {
+	list-style-image: url("images/InstaLogo.png");
+}
+
 .img-profil {
     margin: auto;
     margin-top: 50px;
